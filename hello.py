@@ -4,10 +4,10 @@ st.title("Cold Call Calculator")
 
 # Layout the input sliders
 col1, col2, = st.columns(2)
-gross = col1.slider('Select Gross Revenue Desired (in $)', 0, 1000000, 100000)
-comm = col2.slider('Select Average Commission (in $)', 0, 5000, 3000)
-cctod = col1.slider('Select CC to Demo %', 0, 60, 20)
-demotosale = col2.slider('Select Demo to Sale %', 0, 75, 25)
+gross = col1.slider('Select Gross Revenue Desired (in $)', 1, 1000000, 100000)
+comm = col2.slider('Select Average Commission (in $)', 1, 5000, 3000)
+cctod = col1.slider('Select CC to Demo %', 1, 75, 20)
+demotosale = col2.slider('Select Demo to Sale %', 1, 75, 25)
 
 # Calculate the demos.
 salesgen = gross/comm
